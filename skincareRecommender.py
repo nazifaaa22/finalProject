@@ -11,7 +11,10 @@ class skincare:
         """
 
 def userQuestions():
-    """asks the user questions about their skin 
+    """Asks the user questions about their skin, including their skin type, their skincare concern, and their budget.
+
+    Returns:
+        None
     """
     skintype = input("What is your skinstype?")
     targetConcern = input("What is your skin concern?")
