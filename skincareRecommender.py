@@ -3,10 +3,17 @@ import skincare_dataset
 class skincare:
     """A class for determining which skincare products work best for user.
 
+    Attributes:
+
+    Methods:
     
     """
     def __init__(self):
         """Initializes a skincare object.
+
+        Args:
+
+        Returns:
         
         """
 
