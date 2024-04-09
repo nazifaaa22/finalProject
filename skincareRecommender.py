@@ -15,6 +15,7 @@ def userQuestions():
     """
     skintype = input("What is your skinstype?")
     targetConcern = input("What is your skin concern?")
+    budget = input("What is your budget?")
 
  
 
