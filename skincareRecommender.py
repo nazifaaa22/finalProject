@@ -43,21 +43,19 @@ class SkincareRecommender:
 class Moisturizer:
     def __init__():
 class Cleanser: 
-    def __init__(): 
+    def (): 
 class Treatment: 
-    def __init__():
-
     def ():
         if targetConcern = acne 
             return = salicylic acid  
         elif targetConcern = anti aging 
             return = retinol 
 class Face_Mask: 
-    def __init__(): 
+    def (): 
 class Eye_Cream:
-    def __init__(): 
+    def (): 
 class Sun_Protection: 
-    def __init__(): 
+    def (): 
 
 
 
