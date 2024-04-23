@@ -28,6 +28,7 @@ def userQuestions():
     skintype = input("What is your skinstype?")
     targetConcern = input("What is your skin concern?")
     budget = input("What is your budget?")
+
 class SkincareRecommender:
     """_summary_
     """
@@ -50,26 +51,24 @@ class Cleanser:
         """
 class Treatment:   
     def __init__():
-    """ Initializes a Treatment object.
-    """
-        
-    def ():
+        """ Initializes a Treatment object.
+        """
         if targetConcern = acne 
-            return = salicylic acid  
+            return "salicylic acid"
         elif targetConcern = anti aging 
-            return = retinol 
+            return "retinol" 
 class Face_Mask:
     def __init__():
-    """ Initializes a Face Mask object.
-    """
+        """ Initializes a Face Mask object.
+        """
 class Eye_Cream:
     def __init__(): 
-    """ Initializes an Eye Cream object.
-    """
+        """ Initializes an Eye Cream object.
+        """
 class Sun_Protection:
     def __init__(): 
-    """ Initializes a Sun Protection object. 
-    """
+        """ Initializes a Sun Protection object. 
+        """
 
 
 
