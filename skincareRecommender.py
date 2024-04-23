@@ -11,7 +11,7 @@ class Skincare:
     
     """
     def __init__(self):
-        """Initializes a skincare object.
+        """ Initializes a Skincare object.
 
         Args:
 
@@ -20,7 +20,7 @@ class Skincare:
         """
 
 def userQuestions():
-    """Asks the user questions about their skin, including their skin type, their skincare concern, and their budget.
+    """ Asks the user questions about their skin, including their skin type, their skincare concern, and their budget.
 
     Returns:
         None
@@ -33,10 +33,12 @@ class SkincareRecommender:
     """_summary_
     """
     def __init__(self, dataset_path):
+        """ Initializes the Skincare Recommender object. 
+        """
         self.products_df = pd.read_csv(dataset_path)
 
     def userQuestions():
-        """asks the user questions about their skin 
+        """ asks the user questions about their skin 
         """
         skintype = input("What is your skinstype?")
         targetConcern = input("What is your skin concern?")
