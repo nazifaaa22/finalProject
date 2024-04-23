@@ -2,7 +2,7 @@ import sys
 import skincare_dataset 
 import pandas as pd
 
-class skincare:
+class Skincare:
     """A class for determining which skincare products work best for user.
 
     Attributes:
@@ -42,25 +42,35 @@ class SkincareRecommender:
 
 class Moisturizer:
     def __init__():
-        """Initializes a Moisturizer object. 
+        """ Initializes a Moisturizer object. 
         """
 class Cleanser: 
-    """Initializes a Cleanser object.  
+    """ Initializes a Cleanser object.  
     """
-    def (): 
-class Treatment: 
+    def __init__(): 
+class Treatment:
+    """ Initializes a Treatment object.
+    """
     
+    def __init__():
+        
     def ():
         if targetConcern = acne 
             return = salicylic acid  
         elif targetConcern = anti aging 
             return = retinol 
-class Face_Mask: 
-    def (): 
+class Face_Mask:
+    """ Initializes a Face Mask object.
+    """
+    def __init__(): 
 class Eye_Cream:
-    def (): 
-class Sun_Protection: 
-    def (): 
+    """ Initializes an Eye Cream object.
+    """
+    def __init__(): 
+class Sun_Protection:
+    """ Initializes a Sun Protection object. 
+    """
+    def __init__(): 
 
 
 
