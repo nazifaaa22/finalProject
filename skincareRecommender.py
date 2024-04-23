@@ -42,9 +42,14 @@ class SkincareRecommender:
 
 class Moisturizer:
     def __init__():
+        """Initializes a Moisturizer object. 
+        """
 class Cleanser: 
+    """Initializes a Cleanser object.  
+    """
     def (): 
 class Treatment: 
+    
     def ():
         if targetConcern = acne 
             return = salicylic acid  
