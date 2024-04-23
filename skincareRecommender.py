@@ -45,14 +45,13 @@ class Moisturizer:
         """ Initializes a Moisturizer object. 
         """
 class Cleanser: 
-    """ Initializes a Cleanser object.  
-    """
     def __init__(): 
-class Treatment:
+        """ Initializes a Cleanser object.  
+        """
+class Treatment:   
+    def __init__():
     """ Initializes a Treatment object.
     """
-    
-    def __init__():
         
     def ():
         if targetConcern = acne 
@@ -60,17 +59,17 @@ class Treatment:
         elif targetConcern = anti aging 
             return = retinol 
 class Face_Mask:
+    def __init__():
     """ Initializes a Face Mask object.
     """
-    def __init__(): 
 class Eye_Cream:
+    def __init__(): 
     """ Initializes an Eye Cream object.
     """
-    def __init__(): 
 class Sun_Protection:
+    def __init__(): 
     """ Initializes a Sun Protection object. 
     """
-    def __init__(): 
 
 
 
