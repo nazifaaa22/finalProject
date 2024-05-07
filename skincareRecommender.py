@@ -9,8 +9,14 @@ class Skincare:
     Methods:
     
     """
+<<<<<<< HEAD
     def __init__(self, path):
         """Initializes a skincare object.
+=======
+    def __init__(self):
+        """ Initializes a Skincare object.
+
+>>>>>>> 62fa8fbb4a23a8b8eb8a89cc1a3554d4ddfc64e8
         Args:
         Returns:
         """
@@ -26,16 +32,30 @@ class Skincare:
         targetConcern = input("What is your skin concern?")
         budget = input("What is your budget?")
 
+<<<<<<< HEAD
         return skintype, targetConcern, budget 
+=======
+def userQuestions():
+    """ Asks the user questions about their skin, including their skin type, their skincare concern, and their budget.
+
+    Returns:
+        None
+    """
+    skintype = input("What is your skinstype?")
+    targetConcern = input("What is your skin concern?")
+    budget = input("What is your budget?")
+>>>>>>> 62fa8fbb4a23a8b8eb8a89cc1a3554d4ddfc64e8
 
 class SkincareRecommender:
     """_summary_
     """
     def __init__(self, dataset_path):
+        """ Initializes the Skincare Recommender object. 
+        """
         self.products_df = pd.read_csv(dataset_path)
 
     def userQuestions():
-        """asks the user questions about their skin 
+        """ asks the user questions about their skin 
         """
         skintype = input("What is your skinstype?")
         targetConcern = input("What is your skin concern?")
