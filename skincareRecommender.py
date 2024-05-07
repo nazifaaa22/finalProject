@@ -22,18 +22,18 @@ class Skincare:
         """
         self = pd.read_csv(path)
 
-    def userQuestions(self, skintype, targetConcern, budget):
+    def userQuestions(self, skinType, targetConcern, budget):
         """Asks the user questions about their skin, including their skin type, their skincare concern, and their budget.
 
         Returns:
             None
         """
-        skintype = input("What is your skinstype?")
+        skinType = input("What is your skinstype?")
         targetConcern = input("What is your skin concern?")
         budget = input("What is your budget?")
 
 <<<<<<< HEAD
-        return skintype, targetConcern, budget 
+        return skinType, targetConcern, budget 
 =======
 def userQuestions():
     """ Asks the user questions about their skin, including their skin type, their skincare concern, and their budget.
@@ -59,6 +59,10 @@ class SkincareRecommender:
         """
         skintype = input("What is your skinstype?")
         targetConcern = input("What is your skin concern?")
+
+    def recommendations():
+        """ gives recommendations based on user's answers regarding skin type, target concern and budget
+        """
 
 class Moisturizer:
     def __init__():
@@ -92,7 +96,7 @@ class Sun_Protection:
 def main (): 
     dataset_path = 'skincare_dataset.csv'
     recommender = SkincareRecommender(dataset_path)
-    skintype, targetConcern = userQuestions()
+    skinType, targetConcern, budget = userQuestions()
 
 if __name__ == "__main__":
     main() 
