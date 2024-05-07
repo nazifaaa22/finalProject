@@ -4,30 +4,29 @@ import pandas as pd
 
 class Skincare:
     """A class for determining which skincare products work best for user.
-
     Attributes:
 
     Methods:
     
     """
-    def __init__(self):
+    def __init__(self, path):
         """Initializes a skincare object.
-
         Args:
+        Returns:
+        """
+        self = pd.read_csv(path)
+
+    def userQuestions(self, skintype, targetConcern, budget):
+        """Asks the user questions about their skin, including their skin type, their skincare concern, and their budget.
 
         Returns:
-        
+            None
         """
+        skintype = input("What is your skinstype?")
+        targetConcern = input("What is your skin concern?")
+        budget = input("What is your budget?")
 
-def userQuestions():
-    """Asks the user questions about their skin, including their skin type, their skincare concern, and their budget.
-
-    Returns:
-        None
-    """
-    skintype = input("What is your skinstype?")
-    targetConcern = input("What is your skin concern?")
-    budget = input("What is your budget?")
+        return skintype, targetConcern, budget 
 
 class SkincareRecommender:
     """_summary_
@@ -69,6 +68,14 @@ class Sun_Protection:
     def __init__(): 
         """ Initializes a Sun Protection object. 
         """
+
+def main (): 
+    dataset_path = 'skincare_dataset.csv'
+    recommender = SkincareRecommender(dataset_path)
+    skintype, targetConcern = userQuestions()
+
+if __name__ == "__main__":
+    main() 
 
 
 
