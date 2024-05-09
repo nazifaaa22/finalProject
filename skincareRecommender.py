@@ -36,24 +36,46 @@ class SkincareRecommender:
         """
         self.products_df = pd.read_csv(dataset_path)
 
-    def userQuestions():
+    def userQuestions(self):
         """ asks the user questions about their skin 
         """
         skintype = input("What is your skinstype?")
         targetConcern = input("What is your skin concern?")
 
 class Moisturizer:
-    def __init__():
+    def __init__(self, list):
         """ Initializes a Moisturizer object. 
+        """
+        self.list = list
+        moisturizer_list = [] 
+        obj = Moisturizer()
         """
         moisturizer = ("What is your skintype? (Choose 1-5, 1: Combo, 2: Dry, 3: Normal, 4: Oily, 5: Sensitive)")
         skin_types = ["Combo", "Dry", "Normal", "Oily", "Sensitive"]
+        """
         budget = ("What is your budget?")
+        """for budget"""
 
-        for skin_type in skin_types:
+        for skintype in skin_types:
             print(skin_type) 
 
-        return  
+    def main(path): 
+        dataset_path = 'skincare_dataset.csv'
+        recommender = SkincareRecommender(dataset_path)
+        recommender.userQuestions()
+
+        product_list = []
+        with open(path, 'r') as file:
+            for line in file:
+                product_list.append(line.strip()) 
+
+        for product in product_list: 
+
+            if skintype in product: 
+                print(f"The product{product} is suitable foryour skin type.")    
+        
+        return product_list
+          
 class Cleanser: 
     def __init__(): 
         """ Initializes a Cleanser object.  
@@ -62,9 +84,9 @@ class Treatment:
     def __init__():
         """ Initializes a Treatment object.
         """
-        if targetConcern = acne 
+        if targetConcern == "acne": 
             return "salicylic acid"
-        elif targetConcern = anti aging 
+        elif targetConcern == "anti aging": 
             return "retinol" 
 class Face_Mask:
     def __init__():
@@ -93,11 +115,12 @@ def main (path):
     with open(path, 'r') as file:
         newfile = file.readlines()
 
-    return "The best moisturizer is" brand "with" price
+    return "The best moisturizer is" {brand} "with" price
 
 
 if __name__ == "__main__":
     main("skincare_dataset.txt") 
+    print (Skincare) 
 
 
 
