@@ -72,7 +72,7 @@ class Face_Mask:
         """
         face_mask = ("What is your skintype? (Choose 1-4, 1: Combo, 2: Dry, 3: Normal, 4: Oily, 5: Sensitive)")
 
-        if "skincare_dataset" == 
+        if "skincare_dataset" ==  
 
 class Eye_Cream:
     def __init__(): 
