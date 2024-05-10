@@ -9,16 +9,20 @@ import pandas as pd
 
 class Skincare:
     """A class for determining which skincare products work best for user.
+    
     Attributes:
+        df(DataFrame): contains skincare products
 
     Methods:
+        userQuestions: asks users questions about their skincare needs/budget.
     
     """
     def __init__(self, path):
         """Initializes a skincare object.
+        
         Args:
             path: provides the path
-        Returns:
+        
         """
 
         self.df = pd.read_csv(path)
@@ -41,7 +45,7 @@ class Skincare:
         return skintype, targetConcern, budget 
 
 class SkincareRecommender:
-    """The skincare recommender
+    """The skincare recommender based on input.
 
     Attributes:
         dataset_path: provides a path
@@ -52,7 +56,7 @@ class SkincareRecommender:
         """ Initializes the Skincare Recommender object.
 
         Args:
-            dataset_path: provides a path
+            dataset_path: provides a path to the dataset
         """
         self.products_df = pd.read_csv(dataset_path)
 
@@ -64,7 +68,7 @@ class SkincareRecommender:
         targetConcern = input("What is your skin concern?")
 
     def recommend_products(self, skintype, targetConcern):
-        """Recommends products to user
+        """Recommends products to user.
 
         Args:
             skintype(str): the user's skintype
@@ -135,12 +139,19 @@ class Moisturizer:
         return product_list
           
 class Cleanser: 
+    """Class for cleanser products.
+    
+    """
     def __init__(self, rank): 
-        """ Initializes a Cleanser object.  
+        """ Initializes a Cleanser object. 
+        
         """
         if list legnth > i = 
             reset = {cleanser} with the biggest rating 
-class Treatment:   
+class Treatment:
+    """Class for treatment products.
+    
+    """
     def __init__():
         """ Initializes a Treatment object.
         """
@@ -150,6 +161,9 @@ class Treatment:
             return "retinol" 
         
 class Face_Mask:
+    """Class for face mask products.
+    
+    """
     def __init__():
         """ Initializes a Face Mask object.
         """
@@ -158,16 +172,23 @@ class Face_Mask:
         if "skincare_dataset" ==  
 
 class Eye_Cream:
+    """Class for eye cream products
+    """
+    
     def __init__(): 
         """ Initializes an Eye Cream object.
         """
         eye_cream = 
 class Sun_Protection:
+    """Class for products that provide sun protection.
+    """
     def __init__(): 
         """ Initializes a Sun Protection object. 
         """
 
 def main (path): 
+    """Runs the skincare recommendation
+    """
     skintype, targetConcern = userQuestions()
 
     skincarerecommender = []
