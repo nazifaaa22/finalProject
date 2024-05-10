@@ -17,6 +17,7 @@ class Skincare:
     def __init__(self, path):
         """Initializes a skincare object.
         Args:
+            path: provides the path
         Returns:
         """
 
@@ -24,6 +25,11 @@ class Skincare:
 
     def userQuestions(self, skintype, targetConcern, budget):
         """Asks the user questions about their skin, including their skin type, their skincare concern, and their budget.
+
+        Args:
+            skintype(str): the user's type of skin
+            targetConcern(str): the user's main target concern for their skin
+            budget(float): the user's budget
 
         Returns:
             None
@@ -35,25 +41,52 @@ class Skincare:
         return skintype, targetConcern, budget 
 
 class SkincareRecommender:
-    """_summary_
+    """The skincare recommender
+
+    Attributes:
+        dataset_path: provides a path
+        skintype(str): the user's type of skin
+        targetConcern(str): the user's main target concern
     """
     def __init__(self, dataset_path):
-        """ Initializes the Skincare Recommender object. 
+        """ Initializes the Skincare Recommender object.
+
+        Args:
+            dataset_path: provides a path
         """
         self.products_df = pd.read_csv(dataset_path)
 
     def userQuestions(self):
-        """ asks the user questions about their skin 
-        """
+        """ Asks the user questions about their skin.
+
+       """
         skintype = input("What is your skinstype?")
         targetConcern = input("What is your skin concern?")
 
-    def recommend_products(self, skintype, targetConcern): 
+    def recommend_products(self, skintype, targetConcern):
+        """Recommends products to user
+
+        Args:
+            skintype(str): the user's skintype
+            targetConcern(str): the user's main concern regarding their skincare
+        """
         pass 
 
 class Moisturizer:
+    """A class that focuses on the moisturizer products.
+
+    Attributes:
+        list(list): provides a list of moisturizers
+        brand(str): provides the different brands of moisturizers
+        price(float): provides the different prices
+    """
     def __init__(self, list, brand, price):
-        """ Initializes a Moisturizer object. 
+        """ Initializes a Moisturizer object.
+
+        Args:
+            list(list): provides a list of moisturizers
+            brand(str): provides the different brands of moisturizers
+            price(float): provides the different prices
         """
         self.list = list
         moisturizer_list = [] 
@@ -77,6 +110,14 @@ class Moisturizer:
             print("Mostuizer price: ", moisturizer.price)
 
     def main(path): 
+        """Reads the dataset and outputs a message if match is found.
+
+        Args:
+            path(str): provides a file path to products
+        
+        Returns:
+            product_list(list): list containing the products
+        """
         dataset_path = 'skincare_dataset.csv'
         recommender = SkincareRecommender(dataset_path)
         recommender.userQuestions()
